@@ -12,13 +12,23 @@ function countdown(){
     counter.textContent = minutes + ":" + seconds;
 
     // Timer starting
-    if(counter_num === 180){
+    if(counter_num === 300){
         play_sound('sounds/start.mp3');
     }
 
     // 1st phase over?
-    if(counter_num === 165){
+    if(counter_num === 285){
         play_sound('sounds/wash.mp3');
+    }
+
+    // 4 minutes left
+    if(counter_num === 120){
+        play_sound('sounds/4min.mp3');
+    }
+
+    // 3 minutes left
+    if(counter_num === 180){
+        play_sound('sounds/3min.mp3');
     }
 
     // 2 minutes left
@@ -27,7 +37,7 @@ function countdown(){
     }
 
     // 2nd phase over?
-    if(counter_num === 75){
+    if(counter_num === 135){
         play_sound('sounds/enjoy.mp3');
     }
 
@@ -47,7 +57,7 @@ function countdown(){
 function start_countdown(){
     clearInterval(timerInterval);
     timerInterval = setInterval(countdown, 1000);
-    counter_num = 180;
+    counter_num = 300;
 }
 
 function stop_countdown(){
