@@ -3,6 +3,7 @@ var timerInterval;
 
 function countdown(){
     var counter = document.getElementById('countdown');
+    var background = document.getElementById('box');
 
     //clock format
     var minutes = Math.floor(counter_num / 60);
@@ -14,11 +15,13 @@ function countdown(){
     // Timer starting
     if(counter_num === 300){
         play_sound('sounds/start.mp3');
+        background.className = 'start';
     }
 
     // 1st phase over?
     if(counter_num === 285){
         play_sound('sounds/wash.mp3');
+        background.className = 'washing'
     }
 
     // 4 minutes left
@@ -39,6 +42,7 @@ function countdown(){
     // 2nd phase over?
     if(counter_num === 135){
         play_sound('sounds/enjoy.mp3');
+        background.className = 'enjoy'
     }
 
     // 1 minute left
