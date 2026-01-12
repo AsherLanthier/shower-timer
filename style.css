@@ -1,8 +1,7 @@
-.box{
+#box{
     border-style: solid;
     border-color: black;
     height: 100vh;
-    background-image: url('images/shower.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -10,6 +9,21 @@
     justify-content: center;
     align-items: center;
     
+}
+
+.start{
+    background-image: url('images/shower.png');
+
+}
+
+.wash{
+    background-image: url('images/washing.png');
+
+}
+
+.enjoy{
+    background-image: url('images/happy.png');
+
 }
 
 #countdown{
