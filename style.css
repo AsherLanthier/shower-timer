@@ -12,17 +12,20 @@
 }
 
 .start{
-    background-image: url('images/shower.png');
+    /*background-image: url('images/shower.png');*/
+    background-color: rgb(244, 244, 151);
 
 }
 
 .wash{
-    background-image: url('images/washing.png');
+    /*background-image: url('images/washing.png');*/
+    background-color: rgb(151, 216, 244);
 
 }
 
 .enjoy{
-    background-image: url('images/happy.png');
+    /*background-image: url('images/happy.png');*/
+    background-color: rgb(151, 244, 165);
 
 }
 
