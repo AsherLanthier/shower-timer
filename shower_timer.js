@@ -25,7 +25,7 @@ function countdown(){
     }
 
     // 4 minutes left
-    if(counter_num === 120){
+    if(counter_num === 240){
         play_sound('sounds/4min.mp3');
     }
 
